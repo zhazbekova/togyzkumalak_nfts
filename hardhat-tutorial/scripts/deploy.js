@@ -8,7 +8,7 @@ async function main() {
   // URL from where we can extract the metadata for a NFT
   const metadataURL = METADATA_URL;
   
-  const cryptoDevsContract = await ethers.getContractFactory("TogyzKumalak");
+  const cryptoDevsContract = await ethers.getContractFactory("CryptoDevs");
 
   // deploy the contract
   const deployedCryptoDevsContract = await cryptoDevsContract.deploy(
