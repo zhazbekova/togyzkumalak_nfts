@@ -12,14 +12,14 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
       */
     string _baseTokenURI;
 
-    //  _price is the price of one Crypto Dev NFT
+    //  _price is the price of one  NFT
     uint256 public _price = 0.01 ether;
 
     // _paused is used to pause the contract in case of an emergency
     bool public _paused;
 
-    // max number of CryptoDevs
-    uint256 public maxTokenIds = 20;
+    // max number of NFTs
+    uint256 public maxTokenIds = 50;
 
     // total number of tokenIds minted
     uint256 public tokenIds;
@@ -37,13 +37,7 @@ contract CryptoDevs is ERC721Enumerable, Ownable {
         require(!_paused, "Contract currently paused");
         _;
     }
-
-    /**
-      * @dev ERC721 constructor takes in a `name` and a `symbol` to the token collection.
-      * name in our case is `Crypto Devs` and symbol is `CD`.
-      * Constructor for Crypto Devs takes in the baseURI to set _baseTokenURI for the collection.
-      * It also initializes an instance of whitelist interface.
-      */
+    
     constructor (string memory baseURI, address whitelistContract) ERC721("Crypto Devs", "CD") {
         _baseTokenURI = baseURI;
         whitelist = IWhitelist(whitelistContract);

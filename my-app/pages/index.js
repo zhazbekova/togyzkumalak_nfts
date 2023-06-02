@@ -325,11 +325,10 @@ export default function Home() {
       return (
           <div>
             <div className={styles.description}>
-              Presale has started!!! If your address is whitelisted, Mint a Crypto
-              Dev 🥳
+            Get ready to mint Togyz Kumalak NFTs as the development phase begins! 
             </div>
             <button className={styles.button} onClick={presaleMint}>
-              Presale Mint 🚀
+              Presale Mint 
             </button>
           </div>
       );
@@ -359,7 +358,7 @@ export default function Home() {
               It&#39;s an NFT collection for developers in Crypto.
             </div>
             <div className={styles.description}>
-              {tokenIdsMinted}/20 have been minted
+              {tokenIdsMinted}/50 have been minted
             </div>
             {renderButton()}
           </div>
