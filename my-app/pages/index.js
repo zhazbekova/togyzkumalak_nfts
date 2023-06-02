@@ -41,7 +41,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a TogyzKumalak NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -67,7 +67,7 @@ export default function Home() {
       // wait for the transaction to get mined
       await tx.wait();
       setLoading(false);
-      window.alert("You successfully minted a Crypto Dev!");
+      window.alert("You successfully minted a TogyzKumalak NFT!");
     } catch (err) {
       console.error(err);
     }
@@ -232,8 +232,8 @@ export default function Home() {
     // If user is not connected to the Goerli network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 80001) {
-      window.alert("Change the network to Polygon");
-      throw new Error("Change network to Polygon");
+      window.alert("Change the network to Mumbai");
+      throw new Error("Change network to Mumbai");
     }
 
     if (needSigner) {
@@ -339,7 +339,7 @@ export default function Home() {
     if (presaleStarted && presaleEnded) {
       return (
           <button className={styles.button} onClick={publicMint}>
-            Public Mint 🚀
+            Public Mint 
           </button>
       );
     }
@@ -348,13 +348,13 @@ export default function Home() {
   return (
       <div>
         <Head>
-          <title>Crypto Devs</title>
+          <title>Togyz Kumalak</title>
           <meta name="description" content="Whitelist-Dapp" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.main}>
           <div>
-            <h1 className={styles.title}>Welcome to Crypto Devs!</h1>
+            <h1 className={styles.title}>Welcome to Togyz Kumalak NFT Collection!</h1>
             <div className={styles.description}>
               It&#39;s an NFT collection for developers in Crypto.
             </div>
@@ -364,13 +364,9 @@ export default function Home() {
             {renderButton()}
           </div>
           <div>
-            <img className={styles.image} src="./cryptodevs/1.jpg" />
+            <img className={styles.image} src="./nfts/preview.gif" />
           </div>
         </div>
-
-        <footer className={styles.footer}>
-          Made with &#10084; by Crypto Devs
-        </footer>
       </div>
   );
 }
