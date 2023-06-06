@@ -353,18 +353,10 @@ export default function Home() {
         </Head>
         <div className={styles.main}>
           <div>
-            <h1 className={styles.title}>Welcome to Togyz Kumalak NFT Collection!</h1>
-            <div className={styles.description}>
-              It&#39;s an NFT collection for developers in Crypto.
-            </div>
-            <div className={styles.description}>
-              {tokenIdsMinted}/50 have been minted
-            </div>
+            
             {renderButton()}
           </div>
-          <div>
-            <img className={styles.image} src="./nfts/preview.gif" />
-          </div>
+         
         </div>
       </div>
   );

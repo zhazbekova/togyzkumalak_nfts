@@ -1,0 +1,114 @@
+body {
+    background-image: url("https://gateway.pinata.cloud/ipfs/Qmb2JZECquiFqaHnzHScDXVFEz3XhBaxkNd83YrvQVqwWc?_gl=1*8j2xq6*rs_ga*MzI1NDEzNjU2LjE2ODU1MTMyNjc.*rs_ga_5RMPXG14TE*MTY4NjA0MDkzMS43LjEuMTY4NjA0MTE2MS42MC4wLjA.");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  table, th, td {
+    border: 2px solid;
+    width: 60%;
+    border-radius: 10px;
+
+  }
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .minifield {
+    text-align: center;
+    background-color: #BA7A3A;
+    width: 20px;
+    height: 150px;
+  }
+  .bigfield {
+   text-align: center;
+   background-color: #DB9A3A;
+
+   height: 65px;
+ }
+ .ball {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 0;
+  float : left;
+  margin: auto;
+}
+.yay {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 30%;
+  display: block;
+  text-align: center;
+
+}
+.yay2 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 30%;
+  display: none;
+  text-align: center;
+}
+.yay3 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 30%;
+  display: none;
+  text-align: center;
+}
+.player{
+  margin-left: 10px;
+  width: 150px;
+  border: 10px solid red;
+  float: left;
+  text-align: center;
+  background-color: whitesmoke;
+}
+  
+.opponent{
+  margin-right: 10px;
+  width: 150px;
+  border: 10px solid green;
+  float: right;
+  text-align: center;
+  background-color: whitesmoke;
+}
+.avatar{
+  width:130px;
+  height:130px;
+}
+.invisible{
+  width:900px;
+  height: 600px;
+  margin-left: 220px;
+  margin-right: 160px;
+  position: absolute;
+  display:none;
+  }
+.invisible2 {
+width: 900px; 
+height: 250px;
+margin-left: 220px;
+margin-right: 160px;
+position: absolute;
+display:none;
+}
+
