@@ -33,10 +33,10 @@
   border: none;
   color: #ffffff;
   font-size: 15px;
-  margin-top: 330px;
-  margin-right: 110px;
+  margin-top: 50px;
+  margin-right: 10px;
   height: 50px;
-  width: 250px;
+  width: 150px;
   cursor: pointer;
   margin-bottom: 10%;
 
@@ -49,3 +49,125 @@
     align-items: center;
   }
 }
+.mainy {
+  background-image: url("https://gateway.pinata.cloud/ipfs/QmR4Z8GixyRrNWK4ZUYdyZFj2B4qem76o5ahRbN59qXeZx?_gl=1*ueng8u*rs_ga*MTM5OTQ5ODg2NS4xNjg2MDQ3OTcx*rs_ga_5RMPXG14TE*MTY4NjA0Nzk3MC4xLjEuMTY4NjA0ODk1My4yLjAuMA..");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.otau {
+  border: 2px solid;
+  width: 60%;
+  border-radius: 10px;
+
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.minifield {
+  text-align: center;
+  background-color: #BA7A3A;
+  width: 20px;
+  height: 150px;
+  border: 2px solid;
+  width: 60%;
+  border-radius: 10px;
+}
+.bigfield {
+ text-align: center;
+ background-color: #DB9A3A;
+ border: 2px solid;
+  width: 60%;
+  border-radius: 10px;
+ height: 65px;
+}
+.ball {
+width: 30px;
+height: 30px;
+background-color: black;
+border: 1px solid white;
+border-radius: 50px;
+padding: 0;
+float : left;
+margin: auto;
+}
+.yay {
+background-color: lightgrey;
+width: 300px;
+border: 15px solid green;
+padding: 50px;
+margin: 20px;
+position: absolute;
+margin-top: 12%;
+margin-left: 30%;
+display: block;
+text-align: center;
+
+}
+.yay2 {
+background-color: lightgrey;
+width: 300px;
+border: 15px solid green;
+padding: 50px;
+margin: 20px;
+position: absolute;
+margin-top: 12%;
+margin-left: 30%;
+display: none;
+text-align: center;
+}
+.yay3 {
+background-color: lightgrey;
+width: 300px;
+border: 15px solid green;
+padding: 50px;
+margin: 20px;
+position: absolute;
+margin-top: 12%;
+margin-left: 30%;
+display: none;
+text-align: center;
+}
+.player{
+margin-left: 10px;
+width: 150px;
+border: 10px solid red;
+float: left;
+text-align: center;
+background-color: whitesmoke;
+}
+
+.opponent{
+margin-right: 10px;
+width: 150px;
+border: 10px solid green;
+float: right;
+text-align: center;
+background-color: whitesmoke;
+}
+.avatar{
+width:130px;
+height:130px;
+}
+.invisible{
+width:900px;
+height: 600px;
+margin-left: 220px;
+margin-right: 160px;
+position: absolute;
+display:none;
+}
+.invisible2 {
+width: 900px; 
+height: 250px;
+margin-left: 220px;
+margin-right: 160px;
+position: absolute;
+display:none;
+}
+

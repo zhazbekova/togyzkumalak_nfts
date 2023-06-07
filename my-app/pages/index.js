@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Web3Modal from "web3modal";
 import { abi, NFT_CONTRACT_ADDRESS } from "../constants";
 import styles from "../styles/Home.module.css";
+ 
 
 export default function Home() {
   // walletConnected keep track of whether the user's wallet is connected or not
@@ -345,19 +346,286 @@ export default function Home() {
   };
 
   return (
-      <div>
+      <div class="mainy">
         <Head>
           <title>Togyz Kumalak</title>
           <meta name="description" content="Whitelist-Dapp" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div className={styles.main}>
-          <div>
-            
+
+        <div class="invisible" id="invisible">.</div>
+  <div class="player" id="player">
+    <img class="avatar" src="https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png"></img>
+    <h3>Player name</h3>
+    <button onclick="doyou()">Quit the game</button>
+  </div>
+  
+  <div class="opponent" id="opponent">
+    <img class="avatar" src="qobylandy.jpg"></img>
+    <h3>Easy Bot</h3>
+  </div>
+  <div class="yay3" id="quit">
+    <h3>Are you sure you want to quit the game?</h3>
+<button onclick="location.href='main.html'">Back to main menu</button>
+<button onclick="hide()">Back to the game</button>
+  </div>
+  <div class="yay" id="playerwon">
+    <h3>You won!!!!</h3>
+    <div> 
             {renderButton()}
           </div>
-         
+<button onclick="location.href='main.html'">Back to main menu</button>
+  </div>
+  <div class="yay2" id="opponentwon">
+    <h3>You lose</h3>
+    <button onclick="location.href='main.html'">Back to main menu</button>
+  </div>
+ 
+  <table id="tablo" class="table">
+    <thead>
+      <tr>
+        <td class="minifield" id="opponent9">
+
+       </td>
+       <td class="minifield" id="opponent8">
+</td>
+
+        <td class="minifield" id="opponent7">
+    
+        </td>
+
+        <td class="minifield" id="opponent6">
+       
+        </td>
+
+        <td class="minifield" id="opponent5">
+        
+        </td>
+
+        <td class="minifield" id="opponent4">
+          
+        </td>
+
+        <td class="minifield" id="opponent3">
+
+        </td>
+
+        <td class="minifield" id="opponent2">
+        </td>
+
+        <td class="minifield" id="opponent1">
+    
+        </td>
+      </tr>
+    </thead>
+    <tr>
+      <td colspan="18" class="bigfield" id="playerscore">
+ 
+          <p class="ball" id="20"></p>
+          <p class="ball" id="21"></p>
+          <p class="ball" id="22"></p>
+          <p class="ball" id="23"></p>
+          <p class="ball" id="24"></p>
+          <p class="ball" id="25"></p>
+          <p class="ball" id="26"></p>
+           <p class="ball" id="27"></p>
+          <p class="ball" id="28"></p>
+          <p class="ball" id="29"></p>
+          <p class="ball" id="30"></p>
+          <p class="ball" id="31"></p>
+          <p class="ball" id="32"></p>
+          <p class="ball" id="33"></p>
+          <p class="ball" id="34"></p>
+          <p class="ball" id="35"></p>
+        <p class="ball" id="36"></p>
+          <p class="ball" id="37"></p>
+          <p class="ball" id="38"></p>
+          <p class="ball" id="39"></p>
+          <p class="ball" id="40"></p>
+          <p class="ball" id="41"></p>
+          <p class="ball" id="42"></p>
+          <p class="ball" id="43"></p>
+          <p class="ball" id="44"></p>
+        <p class="ball" id="45"></p>
+          <p class="ball" id="46"></p>
+          <p class="ball" id="47"></p>
+          <p class="ball" id="48"></p>
+          <p class="ball" id="49"></p>
+          <p class="ball" id="50"></p>
+          <p class="ball" id="51"></p>
+          <p class="ball" id="52"></p>
+          <p class="ball" id="53"></p>
+                  <p class="ball" id="54"></p>
+          <p class="ball" id="55"></p>
+          <p class="ball" id="56"></p>
+          <p class="ball" id="57"></p>
+          <p class="ball" id="58"></p>
+          <p class="ball" id="59"></p>
+          <p class="ball" id="60"></p>
+          <p class="ball" id="61"></p>
+          <p class="ball" id="62"></p>
+          <p class="ball" id="0"></p> 
+         <p class="ball" id="1"></p>
+         <p class="ball" id="2"></p>
+         <p class="ball" id="3"></p>
+         <p class="ball" id="4"></p>
+         <p class="ball" id="5"></p>
+         <p class="ball" id="6"></p>
+         <p class="ball" id="7"></p>
+         <p class="ball" id="8"></p>
+               <p class="ball" id="72"></p>
+          <p class="ball" id="73"></p>
+          <p class="ball" id="74"></p>
+          <p class="ball" id="75"></p>
+          <p class="ball" id="76"></p>
+          <p class="ball" id="77"></p>
+          <p class="ball" id="78"></p>
+          <p class="ball" id="79"></p>
+          <p class="ball" id="80"></p>
+               <p class="ball" id="63"></p>
+          <p class="ball" id="64"></p>
+          <p class="ball" id="65"></p>
+          <p class="ball" id="66"></p>
+          <p class="ball" id="67"></p>
+          <p class="ball" id="68"></p>
+          <p class="ball" id="69"></p>
+          <p class="ball" id="70"></p>
+          <p class="ball" id="71"></p>
+           <p class="ball" id="81"></p>
+         <p class="ball" id="82"></p>
+         <p class="ball" id="83"></p>
+         <p class="ball" id="84"></p>
+         <p class="ball" id="85"></p>
+         <p class="ball" id="86"></p>
+         <p class="ball" id="87"></p>
+         <p class="ball" id="88"></p>
+         <p class="ball" id="89"></p>
+           <p class="ball" id="90"></p>
+         <p class="ball" id="91"></p>
+         <p class="ball" id="92"></p>
+         <p class="ball" id="93"></p>
+         <p class="ball" id="94"></p>
+         <p class="ball" id="95"></p>
+         <p class="ball" id="96"></p>
+         <p class="ball" id="97"></p>
+         <p class="ball" id="98"></p>
+          <p class="ball" id="99"></p>
+         <p class="ball" id="100"></p>
+         <p class="ball" id="101"></p>
+         <p class="ball" id="102"></p>
+         <p class="ball" id="103"></p>
+         <p class="ball" id="104"></p>
+         <p class="ball" id="105"></p>
+         <p class="ball" id="106"></p>
+         <p class="ball" id="107"></p>
+      
+      </td>
+    </tr>
+    <tr>
+      <td colspan="18" class="bigfield" id="opponentscore">
+                <p class="ball" id="108"></p>
+         <p class="ball" id="109"></p>
+         <p class="ball" id="110"></p>
+         <p class="ball" id="111"></p>
+         <p class="ball" id="112"></p>
+         <p class="ball" id="113"></p>
+                 <p class="ball" id="153"></p>
+        <p class="ball" id="154"></p>
+        <p class="ball" id="155"></p>
+        <p class="ball" id="156"></p>
+        <p class="ball" id="157"></p>
+        <p class="ball" id="158"></p>
+        <p class="ball" id="159"></p>
+        <p class="ball" id="160"></p>
+        <p class="ball" id="161"></p>
+                       <p class="ball" id="9"></p>
+        <p class="ball" id="10"></p>
+        <p class="ball" id="11"></p>
+        <p class="ball" id="12"></p>
+        <p class="ball" id="13"></p>
+        <p class="ball" id="14"></p>
+        <p class="ball" id="15"></p>
+        <p class="ball" id="16"></p>
+        <p class="ball" id="17"></p>
+              <p class="ball" id="18"></p>
+          <p class="ball" id="19"></p>
+         <p class="ball" id="114"></p>
+         <p class="ball" id="115"></p>
+         <p class="ball" id="116"></p>
+          <p class="ball" id="117"></p>
+         <p class="ball" id="118"></p>
+         <p class="ball" id="119"></p>
+         <p class="ball" id="120"></p>
+         <p class="ball" id="121"></p>
+         <p class="ball" id="122"></p>
+         <p class="ball" id="123"></p>
+         <p class="ball" id="124"></p>
+         <p class="ball" id="125"></p>
+                 <p class="ball" id="126"></p>
+        <p class="ball" id="127"></p>
+        <p class="ball" id="128"></p>
+        <p class="ball" id="129"></p>
+        <p class="ball" id="130"></p>
+        <p class="ball" id="131"></p>
+        <p class="ball" id="132"></p>
+        <p class="ball" id="133"></p>
+        <p class="ball" id="134"></p>
+           <p class="ball" id="135"></p>
+        <p class="ball" id="136"></p>
+        <p class="ball" id="137"></p>
+        <p class="ball" id="138"></p>
+        <p class="ball" id="139"></p>
+        <p class="ball" id="140"></p>
+        <p class="ball" id="141"></p>
+        <p class="ball" id="142"></p>
+        <p class="ball" id="143"></p>
+          <p class="ball" id="144"></p>
+        <p class="ball" id="145"></p>
+        <p class="ball" id="146"></p>
+        <p class="ball" id="147"></p>
+        <p class="ball" id="148"></p>
+        <p class="ball" id="149"></p>
+        <p class="ball" id="150"></p>
+        <p class="ball" id="151"></p>
+        <p class="ball" id="152"></p>
+      </td>
+    </tr>
+    <tfoot>
+      <tr>
+
+       <td class="minifield" id="player1">
+        
+       </td>
+       <td class="minifield" id="player2">
+       
+       </td>
+       <td class="minifield" id="player3">
+  
+       </td>
+       <td class="minifield" id="player4">
+
+       </td>
+       <td class="minifield" id="player5">
+        
+       </td>
+       <td class="minifield" id="player6">
+
+      </td>
+      <td class="minifield" id="player7">
+     
+      </td>
+      <td class="minifield" id="player8">
+      
+      </td>
+      <td class="minifield" id="player9">
+
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+<script src="my-app\pages\bot.js"></script>
+   
         </div>
-      </div>
   );
 }
